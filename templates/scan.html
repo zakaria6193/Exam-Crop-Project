@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="capture"  class="col-md-4">
+                {%  for i in range(2)%}
+
+
+<small>Question {{ i + 1 }}</small>
+    <br><div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">true</label>
+</div><br>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">false</label>
+</div>
+<br>
+
+
+
+
+{% endfor %}
+
+          </div>
+</body>
+</html>
